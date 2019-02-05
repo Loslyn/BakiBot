@@ -8,7 +8,7 @@ bot.on("ready", function() {
     console.log("Le bot est bien connecté");
 });
 
-client.login('NTQyMTE5NzIwMDc0MzQ2NDk2.DzpbKQ.Gy-N8eGHSTTvgutAU0Uop5K2rVE');
+client.login(process.env.TOKEN);
 
 client.on('message', message => {
     if (message.content === prefix + "connection"){
