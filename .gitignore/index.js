@@ -3,11 +3,6 @@ const client = new Discord.Client();
 var bot = new Discord.Client();
 var prefix = "b!";
 
-bot.on("ready", function() {
-    bot.user.SetGame("BakiBot, b!help");
-    console.log("Le bot est bien connecté");
-});
-
 client.login(process.env.TOKEN);
 
 client.on('message', message => {
